@@ -1,7 +1,7 @@
 {
-  "name": "webpack-starter",
+  "name": "starter-kit",
   "version": "1.0.0",
-  "description": "This is a starter for traspiling scss and ES6+ to css and Javascript via webpack 4",
+  "description": "Webpack + Sass + Typescript Starterkit",
   "main": "index.js",
   "scripts": {
     "build:dev": "cross-env NODE_ENV=development webpack --mode development",
@@ -9,7 +9,7 @@
     "start": "webpack-dev-server --mode development",
     "typecheck": "tsc"
   },
-  "author": "Vikas yadav",
+  "author": "mauricioinaz",
   "license": "MIT",
   "dependencies": {
     "bootstrap": "^4.4.1"
@@ -43,5 +43,6 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "repository": "https://github.com/mauricioinaz/starter-kit.git"
 }

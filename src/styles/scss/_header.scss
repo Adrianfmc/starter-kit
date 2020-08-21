@@ -1,0 +1,23 @@
+header {
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: $topNavbar;
+    width: 100%;
+    background-color: $gray;
+    &-brand {
+      display: flex;
+      width: 10rem;
+      margin: 1rem;
+      margin-left: 2rem;
+      align-items: center;
+      justify-content: space-between;
+      color: $dark-color;
+      &__logo {
+        width: 4rem;
+        height: 4rem;
+      }
+    }
+  }
+}

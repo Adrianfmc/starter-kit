@@ -1,0 +1,15 @@
+footer {
+  .footer {
+    height: $topNavbar;
+    width: 100%;
+    background-color: $gray;
+    &_cont {
+      display: flex;
+      width: 10rem;
+      color: $dark-color;
+      h4 {
+        color: $pr-color
+      }
+    }
+  }
+}

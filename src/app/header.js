@@ -9,4 +9,3 @@ export class Header {
         return `Webpack Starter page`;
     }
 }
-
