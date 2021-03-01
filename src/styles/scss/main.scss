@@ -17,9 +17,17 @@ main {
   height: 100%;
   align-items: center;
   justify-content: center;
+  padding: 50px;
 }
 
 .swiper-container {
   width: 600px;
   height: 300px;
+  .swiper-slide {
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+  }
 }
