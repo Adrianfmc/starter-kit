@@ -13,10 +13,7 @@ import Swiper from 'swiper';
 import 'swiper/swiper-bundle.css';
 
 // core version + navigation, pagination modules:
-import SwiperCore, {
-  Navigation,
-  Pagination
-} from 'swiper/core';
+import SwiperCore, { Pagination, EffectCube } from 'swiper/core';
 
 console.log(`***Header******`);
 let header = new Header();
@@ -29,31 +26,18 @@ let footerText = footer.getFooterText();
 console.log(footerText);
 
 // configure Swiper to use modules
-SwiperCore.use([Navigation, Pagination]);
+SwiperCore.use([Pagination, EffectCube]);
 
 var swiper = new Swiper('.swiper-container', {
-// Optional parameters
   effect: 'cube',
-    grabCursor: true,
-    cubeEffect: {
-      shadow: true,
-      slideShadows: true,
-      shadowOffset: 20,
-      shadowScale: 0.94,
-    },
-// If we need pagination
+  grabCursor: true,
+  cubeEffect: {
+    shadow: true,
+    slideShadows: true,
+    shadowOffset: 20,
+    shadowScale: 0.94,
+  },
   pagination: {
     el: '.swiper-pagination',
-  },
-
-// Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
   },
 });
